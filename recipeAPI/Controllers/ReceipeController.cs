@@ -25,9 +25,24 @@ namespace recipeAPI.Controllers
         }
 
         [HttpDelete]
-        public Action deleteReceipe(string id)
+        public ActionResult deleteReceipe(string id)
         {
-            return null;
+            if (id == null)
+            {
+                return BadRequest();
+            }
+            return NoContent();
+        }
+
+        [HttpPatch]
+        public IActionResult updateReceipe(string id)
+        {
+            if (id == null)
+            {
+                return BadRequest();
+            }
+
+            return NoContent();
         }
     }
 }
