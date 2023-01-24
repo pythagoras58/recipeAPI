@@ -11,5 +11,23 @@ namespace recipeAPI.Controllers
             string[] dishes = {"Fufu", "Banku", "Yam"};
             return dishes;
         }
+
+        [HttpGet]
+        public ActionResult GetReceipes()
+        {
+            return null;
+        }
+
+        [HttpPost]
+        public ActionResult createNewReceipe()
+        {
+            return null;
+        }
+
+        [HttpDelete]
+        public Action deleteReceipe(string id)
+        {
+            return null;
+        }
     }
 }
