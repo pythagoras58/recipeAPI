@@ -3,6 +3,7 @@
 namespace recipeAPI.Controllers
 {
     [Route("api/[controller]")]
+    [ApiController]
     public class ReceipeController : ControllerBase
     {
         [HttpGet]
